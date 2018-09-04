@@ -1,0 +1,22 @@
+form(action='/users/edit/id', method='post', name='form1')
+  table(width='25%', border='0')
+    tbody
+      tr
+        td Name
+        td
+          input#name(type='text', name='name', placeholder='name ')
+      tr
+        td Age
+        td
+          input(type='text', name='age', placeholder=' age')
+      tr
+        td Email
+        td
+          input(type='text', name='email', placeholder='email')
+      tr
+        td
+        td
+          input(type='submit', name='Submit', value='Edit')
+  input(type='hidden', name='_method', value='PUT')
+
+ include ../layouts/footer.jade	
